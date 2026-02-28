@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common property */
+.navbar,
+.banner-container {
+    max-width: 1160px;
+}
+
+.color-black {
+    color: #111111;
+}
+
+.color-orange {
+    color: #FEA301;
+}
+
+.color-sky-blue {
+    color: #01ACFD;
+    ;
+}
+
+
+
+/* header section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.kid-school {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.kid-icon {
+    width: 52px;
+    height: 62px;
+}
+
+.institution {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.link-container {
+    display: flex;
+    gap: 2rem;
+}
+
+
+#home {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#about {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#facilities {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #05D4DF;
+}
+
+#admission {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #5D58EF;
+}
+
+.ancor {
+    text-decoration: none;
+}
+
+.link {
+    list-style: none;
+}
+
+.btn {
+    background-color: #FEA301;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 60px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.menu-icon {
+     display: none;
+}
+.separate-line{
+    display: none;
+}
+
+/*Banner related  */
+.banner-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.banner-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    font-size: 1.25rem;
+}
+
+.banner-btn {
+    color: #FFFFFF;
+    background-color: #111111;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 47px;
+}
+
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .banner-container {
+        max-width: 358px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .banner-container{
+        padding: 20px 10px;
+    }
+    .navbar{
+        margin-bottom: 8px;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-img{
+        order: -1;
+        width: 100%;
+    }
+    .separate-line{
+        display: block;
+        background-color: #FEA301;
+    } 
+    .institution,
+    .link-container,
+    .btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display:block;
+        width: 32px;
+        height: 32px;
+    }
+
+}
